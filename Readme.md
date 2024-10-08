@@ -65,7 +65,7 @@ To get started with this repository, follow these simple steps:
 
 Example from **Day 1: IP Addressing**.
 
-### **IP Addressing Example (Day-1-IP-Addressing/examples/ip_addressing_example.py)**
+### **IP Addressing Example
 
 ```python
 import socket
