@@ -52,7 +52,15 @@ To get started with this repository, follow these simple steps:
 - **CIDR Notation:** Simplifying subnet representation.
 - **Practical Exercise:** Creating subnets for a small office network.
 
-### **Day 3: Networking Protocols**
+### **Day 3: VLAN (Virtual Local Area Network)**
+
+- Introduction to VLAN
+- VLAN Configuration
+- VLAN Trunking
+- VLAN Tagging
+....
+
+### **Day 4: Networking Protocols**
 
 - **Introduction to Protocols:** Understanding the role of protocols in networking.
 - **TCP vs. UDP:** Differences and use-cases.
