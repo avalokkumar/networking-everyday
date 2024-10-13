@@ -178,32 +178,9 @@ Port FastEthernet0/2 assigned to VLAN 20.
 ---
 ---
 
-### More details
+## More details
 
-## **VLAN (Virtual Local Area Network) – Basic to Advanced Overview**
-
-VLAN is a crucial concept in networking that allows logical segmentation of networks. Instead of physically separating networks, VLAN divides a network logically, making management easier, improving security, and reducing unnecessary traffic.
-
----
-
-## **What is VLAN?**  
-A **VLAN (Virtual Local Area Network)** logically divides a physical network into multiple smaller networks. Each VLAN acts as a separate network, even if devices are connected to the same physical switch.  
-
-Example:  
-In a large office, different departments (like IT, HR, and Finance) need their own private networks. Instead of installing separate switches for each department, a single switch can be configured to create **virtual networks (VLANs)**.
-
----
-
-## **Why VLANs are Useful**
-
-- **Segmentation:** Separate different departments or teams logically.
-- **Reduced Broadcast Traffic:** Each VLAN forms its own broadcast domain.
-- **Security:** Devices in one VLAN cannot directly access other VLANs without a router.
-- **Flexible Network Management:** Devices can be moved across VLANs without rewiring.
-
----
-
-# **Detailed Concepts and Examples**
+### **Detailed Concepts and Examples**
 
 ### 1. **Broadcast Domains and VLAN Segmentation**  
 A **broadcast domain** is the group of devices that receive broadcast messages from one another. VLANs reduce the size of broadcast domains by grouping related devices.
