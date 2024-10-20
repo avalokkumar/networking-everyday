@@ -60,14 +60,25 @@ To get started with this repository, follow these simple steps:
 - VLAN Tagging
 ....
 
-### **Day 4: Networking Protocols**
+### **Day 4: DHCP (Dynamic Host Configuration Protocol)**
+
+- Introduction to DHCP
+- DHCP Lease Process
+- DHCP Options
+- DHCP Relay
+
+....
+
+### **Day 5: Networking Protocols**
 
 - **Introduction to Protocols:** Understanding the role of protocols in networking.
 - **TCP vs. UDP:** Differences and use-cases.
 - **HTTP/HTTPS:** Securing web communications.
 - **Example:** Setting up a simple HTTP server with Python.
 
-... *(new topics will be added later for subsequent days)*
+... 
+
+> *(new topics will be added later for subsequent days)*
 
 ## Examples
 
