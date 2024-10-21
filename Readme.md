@@ -4,14 +4,6 @@
 
 Welcome to the **Networking Everyday Repository**! This repository is designed to provide a structured, day-by-day learning path for individuals interested in mastering networking concepts. Whether you're a beginner looking to build a solid foundation or someone seeking to deepen your understanding of advanced topics, this repository offers comprehensive explanations, real-world examples, and practical code snippets to facilitate your learning journey.
 
-## Features
-
-- **Daily Topics:** Receive a unique networking topic each day with detailed explanations and examples.
-- **Code Examples:** Practical code snippets in various programming languages to illustrate key concepts.
-- **Real-World Scenarios:** Understand how networking principles apply in real-world situations.
-- **Interactive Learning:** Engage with hands-on exercises and labs to reinforce your knowledge.
-- **Comprehensive Coverage:** From basic concepts to advanced topics, covering all essential aspects of networking.
-
 ## Getting Started
 
 To get started with this repository, follow these simple steps:
