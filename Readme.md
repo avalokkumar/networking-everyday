@@ -67,7 +67,16 @@ To get started with this repository, follow these simple steps:
 - **TCP vs. UDP:** Differences and use-cases.
 - **HTTP/HTTPS:** Securing web communications.
 - **Example:** Setting up a simple HTTP server with Python.
+  
+... 
 
+### **NAT (Network Address Translation)**
+- Introduction to NAT
+- Types of NAT
+- NAT Configuration
+- NAT Traversal
+- Example
+  
 ... 
 
 > *(new topics will be added later for subsequent days)*
