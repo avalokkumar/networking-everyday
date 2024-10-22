@@ -70,7 +70,7 @@ To get started with this repository, follow these simple steps:
   
 ... 
 
-### **NAT (Network Address Translation)**
+### **Day 6: NAT (Network Address Translation)**
 - Introduction to NAT
 - Types of NAT
 - NAT Configuration
@@ -79,6 +79,13 @@ To get started with this repository, follow these simple steps:
   
 ... 
 
+### **Day 7: DNS (Domain Name System)**
+- Introduction to DNS
+- Key Concepts of DNS
+- How DNS Works – Step-by-Step Flow
+- Python Example: Performing a DNS Query
+
+... 
 > *(new topics will be added later for subsequent days)*
 
 ## Examples
