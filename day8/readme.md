@@ -90,16 +90,16 @@ Firewalls come in various forms, each suited for specific security needs. They d
 
 ---
 
-## 1. **Packet-Filtering Firewall**  
+### 1. **Packet-Filtering Firewall**  
 A **packet-filtering firewall** inspects **individual packets** based on predefined rules related to IP addresses, protocols, and ports. It works at **Layer 3 (Network Layer)** and **Layer 4 (Transport Layer)** of the OSI model.
 
-### **How it Works:**  
+#### **How it Works:**  
 - It allows or blocks traffic based on:
   - **Source/Destination IP**
   - **Protocol** (TCP/UDP)
   - **Ports** (e.g., HTTP uses port 80)
 
-### **Example:**
+#### **Example:**
 A packet-filtering firewall allows HTTP (port 80) traffic but blocks FTP (port 21).  
 **Linux iptables command:**
 ```bash
@@ -107,80 +107,80 @@ sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT   # Allow HTTP
 sudo iptables -A INPUT -p tcp --dport 21 -j DROP     # Block FTP
 ```
 
-### **Advantages:**
+#### **Advantages:**
 - Simple and fast.
 - Low resource consumption.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Cannot inspect packet contents.
 - Vulnerable to attacks like **IP spoofing**.
 
 ---
 
-## 2. **Stateful Inspection Firewall**  
+### 2. **Stateful Inspection Firewall**  
 Stateful firewalls track the **state of active connections** and make decisions based on the connection state. This is an enhancement over packet-filtering firewalls.
 
-### **How it Works:**  
+#### **How it Works:**  
 - It monitors the **entire session** (like TCP handshakes) and ensures only **legitimate packets** are allowed back in.
 
-### **Example:**
+#### **Example:**
 A stateful firewall will allow **only the return packets** of an outbound request (e.g., accessing a website).  
 **iptables example:**
 ```bash
 sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 ```
 
-### **Advantages:**
+#### **Advantages:**
 - Prevents **unauthorized packets** from entering.
 - More secure than packet-filtering firewalls.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Requires more resources to maintain state tables.
 - May introduce latency in high-traffic environments.
 
 ---
 
-## 3. **Application Layer Firewall (Proxy Firewall)**  
+#### 3. **Application Layer Firewall (Proxy Firewall)**  
 An **application-layer firewall** works at **Layer 7 (Application Layer)** of the OSI model. It can inspect **application-specific protocols** such as HTTP, SMTP, or DNS. 
 
-### **How it Works:**  
+#### **How it Works:**  
 - It acts as a **proxy**, intercepting all traffic between users and external services.
 - Inspects **data payloads** to detect malicious content like **SQL injections**.
 
-### **Example:**
+#### **Example:**
 A **Web Application Firewall (WAF)** protects a website from malicious requests like **XSS (Cross-Site Scripting)** and **SQL injection** attacks.
 
-### **Advantages:**
+#### **Advantages:**
 - Understands application protocols.
 - Can block malicious content at the application level.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Requires more processing power.
 - Can slow down network traffic.
 
 ---
 
-## 4. **Next-Generation Firewall (NGFW)**  
+### 4. **Next-Generation Firewall (NGFW)**  
 An **NGFW** integrates **traditional firewall capabilities** with advanced features like **deep packet inspection (DPI)**, **intrusion prevention systems (IPS)**, and **threat intelligence feeds**.
 
-### **How it Works:**  
+#### **How it Works:**  
 - It analyzes not only packet headers but also **payload content**.
 - NGFWs can decrypt and inspect **SSL/TLS** traffic.
 
-### **Example:**
+#### **Example:**
 A **Palo Alto NGFW** can block traffic from known malicious IPs and detect **zero-day malware**.
 
-### **Advantages:**
+#### **Advantages:**
 - Combines multiple security features.
 - Provides **granular control** over applications.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Expensive and resource-intensive.
 - Complex to configure and maintain.
 
 ---
 
-## 5. **Unified Threat Management (UTM) Firewall**  
+### 5. **Unified Threat Management (UTM) Firewall**  
 A **UTM firewall** offers a **comprehensive suite of security services** in a single device, including:
 - **Firewall**
 - **VPN**
@@ -188,79 +188,79 @@ A **UTM firewall** offers a **comprehensive suite of security services** in a si
 - **Antivirus**
 - **Content Filtering**
 
-### **How it Works:**  
+#### **How it Works:**  
 - Suitable for **small to medium-sized businesses** that need an all-in-one security solution.
 
-### **Example:**  
+#### **Example:**  
 A UTM device, such as **Fortinet FortiGate**, provides a **firewall, web filtering, and VPN** in one package.
 
-### **Advantages:**
+#### **Advantages:**
 - Easy to manage with a single interface.
 - Cost-effective for small networks.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - May not scale well for large enterprises.
 - All services run on one device, creating a single point of failure.
 
 ---
 
-## 6. **Virtual Firewall (Cloud Firewall)**  
+### 6. **Virtual Firewall (Cloud Firewall)**  
 A **virtual firewall** is software-based and designed for **cloud environments** like AWS, Azure, or Google Cloud. It protects **virtual machines and cloud workloads**.
 
 ### **How it Works:**  
 - Filters traffic between **cloud instances**.
 - Integrates with **cloud-native tools** for security automation.
 
-### **Example:**
+#### **Example:**
 An **AWS Security Group** acts as a virtual firewall for cloud-based EC2 instances.
 
-### **Advantages:**
+#### **Advantages:**
 - Flexible and easy to scale.
 - Optimized for cloud environments.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Limited by cloud provider features.
 - Requires cloud security expertise.
 
 ---
 
-## 7. **Network Address Translation (NAT) Firewall**  
+### 7. **Network Address Translation (NAT) Firewall**  
 A **NAT firewall** modifies the source or destination IP addresses of packets passing through it. It hides **internal network addresses** from the public internet.
 
-### **How it Works:**  
+#### **How it Works:**  
 - Converts **private IP addresses** to **public IPs** when communicating with the internet.
 
-### **Example:**
+#### **Example:**
 A home router with NAT firewall allows multiple devices to access the internet through a **single public IP**.
 
-### **Advantages:**
+#### **Advantages:**
 - Provides basic protection by hiding internal IPs.
 - Reduces the need for public IPs.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Cannot inspect packet payloads.
 - Limited in blocking sophisticated attacks.
 
 ---
 
-## 8. **Cloud Firewall (Firewall as a Service – FWaaS)**  
+### 8. **Cloud Firewall (Firewall as a Service – FWaaS)**  
 Cloud firewalls are **fully managed services** provided by cloud providers. They protect **cloud-hosted applications and services** from threats.
 
-### **Example:**  
+#### **Example:**  
 - **Azure Firewall** monitors and controls traffic to Azure-hosted resources.
 - **AWS Web Application Firewall (WAF)** protects web applications from DDoS attacks.
 
-### **Advantages:**
+#### **Advantages:**
 - Managed and maintained by the provider.
 - Scalable based on traffic load.
 
-### **Disadvantages:**
+#### **Disadvantages:**
 - Dependent on the cloud provider’s infrastructure.
 - May introduce latency if not properly configured.
 
 ---
 
-## 9. **Hardware vs. Software Firewalls**
+### 9. **Hardware vs. Software Firewalls**
 
 | **Type**       | **Description**                               | **Example**                      |
 |----------------|------------------------------------------------|----------------------------------|
@@ -269,7 +269,7 @@ Cloud firewalls are **fully managed services** provided by cloud providers. They
 
 ---
 
-## **Firewall Use Cases in Different Scenarios**
+### **Firewall Use Cases in Different Scenarios**
 
 1. **Enterprise Network:**
    - Uses a **next-generation firewall (NGFW)** to control both internal and external traffic.
