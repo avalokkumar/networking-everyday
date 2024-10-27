@@ -29,14 +29,6 @@ A **load balancer** acts as a **traffic cop**. It sits between clients (users) a
 - Pros: Scalable and easy to integrate with cloud environments.
 - Cons: Dependent on the cloud provider's infrastructure.
 
-### **How Load Balancers Work**
-
-1. **Client Request:** A user sends a request (e.g., accessing a website).
-2. **Load Balancer Assignment:** The load balancer receives the request and chooses a backend server based on the **balancing algorithm**.
-3. **Forwarding:** The load balancer forwards the request to the chosen server.
-4. **Response Handling:** The server processes the request and sends the response back to the load balancer.
-5. **Returning the Response:** The load balancer forwards the response to the client.
-
 ### **Balancing Algorithms**
 
 #### 1. **Round Robin**
