@@ -1,4 +1,4 @@
-### **Wireless Networking**
+## **Wireless Networking**
 
 Wireless networking is a critical area of modern networking, enabling devices to connect to a network without physical cables. It’s the backbone of technologies like Wi-Fi, Bluetooth, and mobile data networks.
 
