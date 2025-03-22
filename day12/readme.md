@@ -4,8 +4,6 @@ Quality of Service (QoS) is a set of techniques used to manage network resources
 
 ---
 
-### **1. What is QoS?**
-
 #### **Key Aspects of QoS**  
 ✅ **Traffic Prioritization** – Ensures time-sensitive applications receive bandwidth first.  
 ✅ **Bandwidth Management** – Allocates bandwidth to different applications or users.  
