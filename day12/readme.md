@@ -1,4 +1,4 @@
-## Quality of Service (QoS)**  
+## Quality of Service (QoS)
 
 Quality of Service (QoS) is a set of techniques used to manage network resources efficiently, ensuring that critical applications receive the necessary bandwidth, low latency, and minimal packet loss.  
 
