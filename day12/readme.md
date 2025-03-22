@@ -1,11 +1,10 @@
 ## Quality of Service (QoS)
 
-Quality of Service (QoS) is a set of techniques used to manage network resources efficiently, ensuring that critical applications receive the necessary bandwidth, low latency, and minimal packet loss.  
+Quality of Service (QoS) is a set of techniques used to manage network resources efficiently, ensuring that critical applications receive the necessary bandwidth, low latency, and minimal packet loss especially for latency-sensitive applications like VoIP, video conferencing, and online gaming.
 
 ---
 
 ### **1. What is QoS?**
-QoS is a network feature that prioritizes certain types of data traffic over others to maintain performance, especially for latency-sensitive applications like VoIP, video conferencing, and online gaming.  
 
 #### **Key Aspects of QoS**  
 ✅ **Traffic Prioritization** – Ensures time-sensitive applications receive bandwidth first.  
